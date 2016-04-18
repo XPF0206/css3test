@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*.list :only-child{
+		background:red;
+	}*/
+
+	/*.list li:nth-child(3){
+		background:red;
+	}
+	.list li:first-child{
+		background:green;
+	}
+	.list li:last-child{
+		background:blue;
+	}
+	.list li:nth-last-child(4){
+		background-color:orange;
+	}*/
+	.list li:nth-child(odd){
+		background-color:red;
+	}
+	:root{
+		border:10px solid red;
+	}
+	p:empty{
+		background:pink;
+		height:30px;
+	}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>00001</li>
+		<li>00002</li>
+		<li>00003</li>
+		<li>00004</li>
+		<li>00005</li>
+		<li>00006</li>
+		<li>00007</li>
+		<li>00008</li>
+		<li>00009</li>
+		<li>00010</li>
+	</ul>
+	<ul class="list">
+		<p>jdskfjsdklfj</p>
+		<p></p>
+		<li>000122</li>
+	</ul>
+</body>
+</html>
