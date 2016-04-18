@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	[class]{
+		width:600px;
+		border:1px solid #ccc;
+	}
+	[class=list]{
+		border-color:red;
+	}
+	/*ul[title~=hello]{
+		background-color:#ccc;
+	}*/
+	/*[title|=hello]{
+		background-color:#ccc;
+	}*/
+	/*[title^=h]{
+		background-color:red;
+	}*/
+	/*[href^=http]:before{
+		content:"超文本:";
+	}
+	[href^=https]:before{
+		content:"安全传输:";
+	}
+	[href^=ftp]:before{
+		content:"文件传输:";
+	}
+	[href^=mailto]:before{
+		content:"邮箱:";
+	}*/
+	[href*="u"]{
+		color:blue;
+		font-weight:bold;
+	}
+	</style>
+</head>
+<body>
+	<ul class="list" title="hello world">
+		<li>0001</li>
+		<li>0002</li>
+		<li>0003</li>
+		<li>0004</li>
+		<li>0005</li>
+	</ul>
+	<div class="banner" title="hello world">
+		<li>001</li>
+		<li>002</li>
+		<li>003</li>
+	</div>
+	<ul title="ni hao">
+		<li>001</li>
+		<li>002</li>
+		<li>003</li>
+	</ul>
+
+	<!--  http   https   ftp  mailto: aaa@5icool.org-->
+	<ul>
+		
+		<li><a href="http://www.baidu.com">百度一下</a></li>
+		<li><a href="https://github.com">github</a></li>
+		<li><a href="ftp://www.baidu.com">百度一下</li>
+		<li><a href="mailto:allcky@qq.com">myemail</a></li>
+	</ul>
+</body>
+</html>

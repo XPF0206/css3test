@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	input:focus{
+		border:1px dashed red;
+		outline:0;
+	}
+	p{
+		border:1px solid #ccc;
+		padding:50px;
+	}
+	p:first-letter{
+		font-size:32px;
+		color:red;
+	}
+	p:first-line{
+		background-color:#ccc;
+		color:#fff;
+	}
+	p:before{
+		content:"123";
+	}
+	p:after{
+		content:"456";
+		color:blue;
+	}
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="用户名">
+	<input type="password" placeholder="密码">
+	<p>
+		&nbsp;比较同一级别的个数，数量多的优先级高，如果相同即比较下一级别的个数 ，至于各级别的优先级，大家应该已经很清楚了，就是：
+
+important > 内联 > ID > 类 > 标签 | 伪类 | 属性选择 > 伪对象 > 继承 > 通配符 通配符 > 继承
+
+这也就解释了为什么11个标签的定义会比不上1个类的定义，1个类加11个标签会比不上2个类的权重高。
+	</p>
+</body>
+</html>
